@@ -4,5 +4,13 @@
     <string name="app_name">BetweenScreens</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="String_input">Enter your name</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_text">Name</string>
+    <string name="enter_text_button">Enter</string>
+    <string name="calling_activiy_message">The calling activity was</string>
+    <string name="get_the_name">Go get the name!</string>
+    <string name="go_button">Go</string>
+    <string name="users_name_sent_back">Users name was:</string>
 
 </resources>

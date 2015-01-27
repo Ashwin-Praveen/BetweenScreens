@@ -1,9 +1,12 @@
 package com.example.ashwinpraveen1.betweenscreens;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,5 +38,23 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goGetName(View view) {
+        Intent getNameScreenIntent = new Intent(this,
+                second_screen.class);
+        final int result =1;
+        getNameScreenIntent.putExtra("callingActivity","Main Activity");
+        startActivityForResult(getNameScreenIntent, result);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        TextView usersNameMessage = (TextView) findViewById(R.id.name_sent_back);
+
+        String nameSentBack = data.getStringExtra("UserName");
+        usersNameMessage.append(" "+nameSentBack);
     }
 }

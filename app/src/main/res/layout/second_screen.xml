@@ -6,6 +6,45 @@
     android:gravity="left"
     android:padding="20dp">
 
-    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/String_input"
+            />
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_text"
+            android:id="@+id/userEditText"/>
+        
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_text_button"
+            android:id="@+id/button"
+            android:onClick="onSendUsersName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calling_activiy_message"
+            android:id="@+id/string_to_let_us_know"/>
+
+        </LinearLayout>
 
 </LinearLayout>
